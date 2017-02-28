@@ -10,6 +10,10 @@ exports.getSetReducer = getSetReducer;
 exports.getResetReducer = getResetReducer;
 exports.createReducer = createReducer;
 /**
+ * @module reducer
+ */
+
+/**
  * return set reducer with auto-reset logic
  * @param  {Object}   initialState initial state for reducer
  * @return {Function}              set reducer

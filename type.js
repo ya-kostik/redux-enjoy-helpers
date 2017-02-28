@@ -5,8 +5,12 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.createTypes = createTypes;
 /**
+ * @module type
+ */
+
+/**
  * Create types object for redux with prefix
- * create('@@user/', ['SET', 'RESET']) => { SET: '@@user/SET', RESET: '@@user/RESET' };
+ * createTypes('@@user/', ['SET', 'RESET']) => { SET: '@@user/SET', RESET: '@@user/RESET' };
  * @param  {String} prefix prefix
  * @param  {Array}  types  array of types
  * @return {Object}        hash with types

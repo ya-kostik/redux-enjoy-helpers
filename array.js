@@ -15,6 +15,10 @@ exports.addItemsToIndex = addItemsToIndex;
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 /**
+ * @module array
+ */
+
+/**
  * Add item into array
  * @param  {Array} list array to change
  * @param  {Midex} item item to add

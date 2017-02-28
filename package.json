@@ -1,11 +1,9 @@
 {
-  "name": "redux-helpers",
+  "name": "redux-enjoy-helpers",
   "version": "1.0.0",
   "description": "Helpers for Redux",
   "main": "index.js",
-  "dependencies": {
-    "jsdoc": "^3.4.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-cli": "^6.23.0",
@@ -20,11 +18,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": "./node_modules/eslint/bin/eslint.js ./lib/",
-    "babel": "./node_modules/babel-cli/bin/babel.js ./lib/ -d ./"
+    "babel": "./node_modules/babel-cli/bin/babel.js ./lib/ -d ./",
+    "jsdoc": "./node_modules/jsdoc/jsdoc.js ./lib -d ./docs",
+    "addtogit": "git add ."
   },
   "pre-commit": [
     "eslint",
-    "babel"
+    "babel",
+    "jsdoc",
+    "addtogit"
   ],
   "repository": {
     "type": "git",
