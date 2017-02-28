@@ -1,0 +1,30 @@
+{
+  "name": "redux-helpers",
+  "version": "1.0.0",
+  "description": "Helpers for Redux",
+  "main": "index.js",
+  "dependencies": {
+    "jsdoc": "^3.4.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.16.1",
+    "jsdoc": "^3.4.3",
+    "pre-commit": "^1.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "./node_modules/eslint/bin/eslint.js ./"
+  },
+  "pre-commit": ["eslint"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ya-kostik/redux-helpers.git"
+  },
+  "author": "Constantin T.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ya-kostik/redux-helpers/issues"
+  },
+  "homepage": "https://github.com/ya-kostik/redux-helpers#readme"
+}
