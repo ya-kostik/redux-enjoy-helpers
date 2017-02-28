@@ -70,6 +70,6 @@ dispatch(userActions.toogleInvisible()));
 //toogle invisible flag at user.current
 ```
 
-More docs at `docs` directory
+More docs at [docs page](https://ya-kostik.github.io/redux-enjoy-helpers/)
 
 MIT License

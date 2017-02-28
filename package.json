@@ -19,7 +19,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": "./node_modules/eslint/bin/eslint.js ./lib/",
     "babel": "./node_modules/babel-cli/bin/babel.js ./lib/ -d ./",
-    "jsdoc": "./node_modules/jsdoc/jsdoc.js ./lib -d ./docs",
+    "jsdoc": "./node_modules/jsdoc/jsdoc.js ./lib -d ./docs -R ./README.md",
     "addtogit": "git add ."
   },
   "pre-commit": [
