@@ -14,6 +14,7 @@
     "babel-preset-es2015": "^6.22.0",
     "eslint": "^3.16.1",
     "jsdoc": "^3.4.3",
+    "lodash": "^4.17.4",
     "pre-commit": "^1.2.2"
   },
   "scripts": {
