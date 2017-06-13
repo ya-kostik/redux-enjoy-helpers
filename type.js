@@ -35,6 +35,6 @@ function createCollectionTypes(prefix) {
   var types = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
 
   if (!Array.isArray(types)) types = [];
-  types.push(['PUSH', 'POP', 'SHIFT', 'UNSHIFT', 'SET', 'SETUP', 'REMOVE']);
+  types = types.concat(['PUSH', 'POP', 'SHIFT', 'UNSHIFT', 'SET', 'SETUP', 'REMOVE']);
   return createTypes(prefix, types);
 }
