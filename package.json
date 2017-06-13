@@ -1,6 +1,6 @@
 {
   "name": "redux-enjoy-helpers",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Helpers for Redux",
   "main": "index.js",
   "dependencies": {},
