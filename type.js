@@ -1,9 +1,10 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.createTypes = createTypes;
+exports.createCollectionTypes = createCollectionTypes;
 /**
  * @module type
  */
@@ -21,4 +22,19 @@ function createTypes(prefix, types) {
     TYPES[type] = prefix + type;
   });
   return TYPES;
+}
+
+/**
+ * Сreate types object for redux collections
+ * Use createTypes
+ * @param  {String} prefix prefix
+ * @param  {Array}  types  array of types
+ * @return {Object}        hash with types
+ */
+function createCollectionTypes(prefix) {
+  var types = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+
+  if (!Array.isArray(types)) types = [];
+  types.push(['PUSH', 'POP', 'SHIFT', 'UNSHIFT', 'SET', 'SETUP', 'REMOVE']);
+  return createTypes(prefix, types);
 }
